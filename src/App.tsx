@@ -1,3 +1,11 @@
+// Components
+import { BrowserRouter as Router } from "react-router";
+import { AppRouter } from "./components/app-router";
+
 export default function App() {
-  return <main>Hola mundo</main>;
+  return (
+    <Router>
+      <AppRouter />
+    </Router>
+  );
 }
