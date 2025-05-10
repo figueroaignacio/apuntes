@@ -2,9 +2,9 @@
 import { Route, Routes } from "react-router";
 
 // Pages
-import { HomePage } from "../pages/home/home";
-import { NotFoundPage } from "../pages/not-found/not-found";
-import { NoteDetailsPage } from "../pages/note-details/note-details";
+import { HomePage } from "@/pages/home/home";
+import { NotFoundPage } from "@/pages/not-found/not-found";
+import { NoteDetailsPage } from "@/pages/note-details/note-details";
 
 export function AppRouter() {
   return (
