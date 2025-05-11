@@ -8,4 +8,6 @@ toc:
 
 ## Temas
 
-En construcción...
+- [Introducción a la arquitectura de computadoras](/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-la-arquitectura-de-computadoras)
+- [Introducción a los sistemas operativos](/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-los-sistemas-operativos)
+- [Introducción a scripting (Bash)](/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-scripting-bash)
