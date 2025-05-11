@@ -8,14 +8,14 @@ const computedFields = <T extends { slug: string }>(data: T) => ({
 
 export const notes = defineCollection({
   name: "Notes",
-  pattern: "notes/**/*.md",
+  pattern: "notes/**/*.mdx",
   schema: s
     .object({
       slug: s.path(),
       title: s.string(),
       description: s.string(),
       published: s.boolean().default(false),
-      body: s.markdown(),
+      body: s.mdx(),
       toc: s.object({
         content: s.toc(),
         visible: s.boolean().default(true),
@@ -34,5 +34,7 @@ export default defineConfig({
     clean: true,
   },
   collections: { notes },
-  markdown: { rehypePlugins: [rehypePrettyCode] },
+  markdown: {
+    rehypePlugins: [[rehypePrettyCode, { theme: "github-dark-default" }]],
+  },
 });
