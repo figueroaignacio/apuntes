@@ -8,7 +8,7 @@ const computedFields = <T extends { slug: string }>(data: T) => ({
 
 export const notes = defineCollection({
   name: "Notes",
-  pattern: "notes/**/*.mdx",
+  pattern: "notes/**/*.md",
   schema: s
     .object({
       slug: s.path(),
