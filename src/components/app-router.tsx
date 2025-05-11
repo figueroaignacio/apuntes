@@ -14,7 +14,7 @@ export function AppRouter() {
     <Routes>
       <Route element={<RootLayout />}>
         <Route path="" element={<HomePage />} />
-        <Route path="/note/*" element={<NoteDetailsPage />} />
+        <Route path="/apuntes/*" element={<NoteDetailsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

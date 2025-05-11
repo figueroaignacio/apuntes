@@ -4,15 +4,15 @@ export const subjects = [
     subjects: [
       {
         label: "Programación I",
-        href: "/note/primer-cuatrimestre/programacion-I",
+        href: "/apuntes/primer-cuatrimestre/programacion-I",
       },
       {
         label: "Organización Empresarial",
-        href: "/note/primer-cuatrimestre/organizacion-empresarial",
+        href: "/apuntes/primer-cuatrimestre/organizacion-empresarial",
       },
       {
         label: "Arquitectura y Sistemas Operativos",
-        href: "/note/primer-cuatrimestre/ayso",
+        href: "/apuntes/primer-cuatrimestre/ayso",
       },
     ],
   },
@@ -21,11 +21,11 @@ export const subjects = [
   //   subjects: [
   //     {
   //       label: "Programacion II",
-  //       href: "/note/segundo-cuatrimestre/matematica-discreta",
+  //       href: "/apuntes/segundo-cuatrimestre/matematica-discreta",
   //     },
   //     {
   //       label: "Base de Datos I",
-  //       href: "/note/segundo-cuatrimestre/base-de-datos-I",
+  //       href: "/apuntes/segundo-cuatrimestre/base-de-datos-I",
   //     },
   //   ],
   // },

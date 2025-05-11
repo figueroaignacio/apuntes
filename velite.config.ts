@@ -8,14 +8,14 @@ const computedFields = <T extends { slug: string }>(data: T) => ({
 
 export const notes = defineCollection({
   name: "Notes",
-  pattern: "notes/**/*.mdx",
+  pattern: "apuntes/**/*.md",
   schema: s
     .object({
       slug: s.path(),
       title: s.string(),
       description: s.string(),
       published: s.boolean().default(false),
-      body: s.mdx(),
+      body: s.markdown(),
       toc: s.object({
         content: s.toc(),
         visible: s.boolean().default(true),
