@@ -54,6 +54,7 @@ code {
 }
 
 pre {
+  font-size: 1rem;
   padding: 1.5em;
   border-radius: 8px;
 }
@@ -100,10 +101,6 @@ blockquote {
   font-size: 1.333em;
 }
 
-p {
-  margin-bottom: 1em;
-}
-
 .prose p {
   margin-bottom: 2em;
 }
@@ -116,4 +113,17 @@ hr {
 strong,
 b {
   font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+}
+
+p,
+a,
+li {
+  font-size: 1rem;
 }
