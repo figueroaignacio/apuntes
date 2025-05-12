@@ -4,8 +4,6 @@ description: Resumen sobre Git y GitHub, conceptos, uso, etc.
 pubDate: 2025-12-5
 ---
 
-## Git y GitHub
-
 ### ¿Qué es Git?
 
 Git es un sistema de control de versiones distribuido que permite rastrear cambios en archivos a lo largo del tiempo. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.

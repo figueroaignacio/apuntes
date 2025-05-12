@@ -4,11 +4,9 @@ description: Apunte sobre fundamentos de bash, uso, caracteristicas, etc.
 pubDate: 2025-12-5
 ---
 
-## 1. Fundamentos de Bash y la Línea de Comandos
-
-### ¿Qué es Bash?
-
 Bash (Bourne Again SHell) es un intérprete de comandos y lenguaje de programación de scripts que sirve como interfaz entre el usuario y el sistema operativo. Es el shell predeterminado en la mayoría de distribuciones Linux y en macOS (hasta Catalina).
+
+## 1. Fundamentos de Bash y la Línea de Comandos
 
 ### La Terminal y el Shell
 

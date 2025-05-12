@@ -4,11 +4,9 @@ description: Apunte sobre fundamentos de sistemas operativos.
 pubDate: 2025-12-5
 ---
 
-## 1. Fundamentos de los Sistemas Operativos
-
-### ¿Qué es un Sistema Operativo?
-
 Un sistema operativo (SO) es el software fundamental que actúa como intermediario entre el hardware de la computadora y las aplicaciones que utilizan los usuarios. Proporciona una capa de abstracción que simplifica y unifica el acceso a los recursos físicos de la máquina.
+
+## 1. Fundamentos de los Sistemas Operativos
 
 ### Funciones Principales
 

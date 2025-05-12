@@ -4,12 +4,7 @@ description: "Apunte sobre las estructuras condicionales, para que funcionan y s
 pubDate: 2025-12-5
 ---
 
-## ¿Que son las estructuras condicionales?
-
 Las estructuras condicionales permiten que nuestros programas tomen decisiones y ejecuten diferentes bloques de código dependiendo de si ciertas condiciones son verdaderas o falsas.
-
-## ¿Qué son las estructuras condicionales?
-
 Son construcciones que permiten alterar el flujo de ejecución de un programa según se cumpla o no una condición. Básicamente, permiten que el programa "tome decisiones".
 
 ## Instrucción if
