@@ -11,7 +11,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 
 <Layout description={description} title={title}>
   <article>
-    <BackButton client:load />
+    <BackButton />
     <div class="prose">
       <div class="title">
         <div class="date">
