@@ -1,67 +1,64 @@
 ---
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import Layout from '../layouts/Layout.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import Layout from "../layouts/BaseLayout/Layout.astro";
 import { indexNotes } from "../lib/config";
 ---
 
 <Layout description={SITE_DESCRIPTION} title={SITE_TITLE}>
-	<section>
-		<div>
-			<img src="https://github.com/figueroaignacio.png" alt="">
-			<div>
-				<h2>Ignacio Figueroa - Apuntes de mi carrera</h2>
-			</div>
+  <section>
+    <div>
+      <img src="https://github.com/figueroaignacio.png" alt="" />
+      <div>
+        <h2>Ignacio Figueroa - Apuntes de mi carrera</h2>
+      </div>
     </div>
     <p>
-      Apuntes organizados por cuatrimestre y materia de la tecnicatura en programacion de la UTN (Universidad Tecnológica Nacional).
+      Apuntes organizados por cuatrimestre y materia de la tecnicatura en
+      programacion de la UTN (Universidad Tecnológica Nacional).
     </p>
-		<ul>
-			{indexNotes.map((item) => (	
-				<li>
-      	  <h2>
-				    {item.cuatrimestre}
-      	  </h2>
-      	  <div class="box">
-      	    {item.subjects.map((subject) => (
-							<div class="item">
-      	        <a href={subject.href}>
-      	          {subject.title}
-      	        </a>
-      	      </div>
-      	     ))}
-          </a>
-        </li>
-  		))}
-		</ul>
-	</section>
+    <ul>
+      {
+        indexNotes.map((item) => (
+          <li>
+            <h2>{item.cuatrimestre}</h2>
+            <div class="box">
+              {item.subjects.map((subject) => (
+                <div class="item">
+                  <a href={subject.href}>{subject.title}</a>
+                </div>
+              ))}
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Layout>
-	
+
 <style>
-	img {
-		width: 5rem;
-		height: 5rem;
-	}
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
 
-	.box {
-		display: flex;
-		flex-direction: row;
-		gap: .7rem;
-		flex-wrap: wrap;
-	}
+  .box {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
 
-	.item {
-		background-color: #fff;
-  	border: 1px solid rgb(var(--gray-light));
-		border-radius: 99999px;
-		padding: 0 1rem;
-		text-align: center;
-		
+  .item {
+    background-color: #fff;
+    border: 1px solid rgb(var(--gray-light));
+    border-radius: 99999px;
+    padding: 0 1rem;
+    text-align: center;
 
-		& a {
-			color: rgb(var(--gray-dark));
-			text-decoration: none;
-			font-size: .85rem;
-		}
-	}
+    & a {
+      color: rgb(var(--gray-dark));
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+  }
 </style>
-	

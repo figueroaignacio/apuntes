@@ -1,2 +1,31 @@
+---
+import styles from "./Header.module.css";
+---
 
-
+<header class={styles.header}>
+  <nav>
+    <ul class={styles.list}>
+      <li class={styles.listItem}>
+        <a href="/acerca" class={styles.listAnchor}> Acerca </a>
+      </li>
+      <li class={styles.listItem}>
+        <a
+          href="https://ignaciofigueroa.vercel.app"
+          class={styles.listAnchor}
+          target="_blank"
+        >
+          Portafolio
+        </a>
+      </li>
+      <li class={styles.listItem}>
+        <a
+          href="https://github.com/figueroaignacio/n3o-apuntes"
+          class={styles.listAnchor}
+          target="_blank"
+        >
+          Código fuente
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

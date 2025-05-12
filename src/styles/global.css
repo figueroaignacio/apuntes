@@ -5,6 +5,7 @@
   --card: #ffffff;
   --accent: #f1f5f9;
   --border: #cbd4e0;
+  --primary: #3b82f6;
 }
 
 @font-face {
@@ -84,15 +85,15 @@ pre > code {
 }
 
 a {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 blockquote {
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--primary);
   padding: 0 0 0 20px;
   margin: 0px;
   font-size: 1.333em;

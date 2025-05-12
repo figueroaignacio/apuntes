@@ -1,0 +1,22 @@
+.header {
+  width: 720px;
+  max-width: calc(100% - 2em);
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+}
+
+.listAnchor {
+  text-decoration: none;
+  color: var(--foreground);
+
+  &:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+}

@@ -1,10 +1,10 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BackButton from '../components/BackButton.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-import Layout from './Layout.astro';
+import type { CollectionEntry } from "astro:content";
+import BackButton from "../../components/BackButton.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Layout from "../BaseLayout/Layout.astro";
 
-type Props = CollectionEntry<'apuntes'>['data'];
+type Props = CollectionEntry<"apuntes">["data"];
 
 const { title, description, pubDate, updatedDate } = Astro.props;
 ---
@@ -16,14 +16,16 @@ const { title, description, pubDate, updatedDate } = Astro.props;
       <div class="title">
         <div class="date">
           <FormattedDate date={pubDate} />
-          {updatedDate && (
-            <div class="last-updated-on">
-              Last updated on <FormattedDate date={updatedDate} />
-            </div>
-          )}
+          {
+            updatedDate && (
+              <div class="last-updated-on">
+                Last updated on <FormattedDate date={updatedDate} />
+              </div>
+            )
+          }
         </div>
         <h1>{title}</h1>
-				<p>{description}</p>
+        <p>{description}</p>
         <hr />
       </div>
       <slot />
@@ -48,7 +50,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
   .title h1 {
     margin: 0 0 0.5em 0;
   }
-  
+
   .date {
     margin-bottom: 0.5em;
     color: rgb(var(--gray));
