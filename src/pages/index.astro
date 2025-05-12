@@ -9,7 +9,7 @@ import { indexNotes } from "../lib/config";
 		<div>
 			<img src="https://github.com/figueroaignacio.png" alt="">
 			<div>
-				<h2>Ignacio Figueroa - Apuntes</h2>
+				<h2>Ignacio Figueroa - Apuntes de mi carrera</h2>
 			</div>
     </div>
     <p>
@@ -17,20 +17,20 @@ import { indexNotes } from "../lib/config";
     </p>
 		<ul>
 			{indexNotes.map((item) => (	
-				<>
+				<li>
       	  <h2>
 				    {item.cuatrimestre}
       	  </h2>
-      	  <ul>
+      	  <div class="box">
       	    {item.subjects.map((subject) => (
-							<li>
-      	        <a href={subject.href} >
+							<div class="item">
+      	        <a href={subject.href}>
       	          {subject.title}
       	        </a>
-      	      </li>
+      	      </div>
       	     ))}
-          </ul>
-        </>
+          </a>
+        </li>
   		))}
 		</ul>
 	</section>
@@ -41,5 +41,28 @@ import { indexNotes } from "../lib/config";
 		width: 5rem;
 		height: 5rem;
 	}
+
+	.box {
+		display: flex;
+		flex-direction: row;
+		gap: .7rem;
+		flex-wrap: wrap;
+	}
+
+	.item {
+		background-color: #fff;
+  	border: 1px solid rgb(var(--gray-light));
+		border-radius: 99999px;
+		padding: 0 1rem;
+		text-align: center;
+		
+
+		& a {
+			color: rgb(var(--gray-dark));
+			text-decoration: none;
+			font-size: .85rem;
+		}
+	}
+
 </style>
 	
