@@ -1,10 +1,8 @@
 ---
 title: Estructuras Repetitivas
-description: "Apunte sobre las estructuras repetitivas, como se usan, en que se usan y sus conceptos básicos."
+description: Las estructuras repetitivas, también conocidas como bucles o ciclos, permiten ejecutar un bloque de código múltiples veces. Python ofrece principalmente dos tipos de bucles: for y while, además de varias construcciones avanzadas para manejar iteraciones de manera eficiente.
 pubDate: 2025-12-5
 ---
-
-Las estructuras repetitivas, también conocidas como bucles o ciclos, permiten ejecutar un bloque de código múltiples veces. Python ofrece principalmente dos tipos de bucles: `for` y `while`, además de varias construcciones avanzadas para manejar iteraciones de manera eficiente.
 
 ## Bucle for
 

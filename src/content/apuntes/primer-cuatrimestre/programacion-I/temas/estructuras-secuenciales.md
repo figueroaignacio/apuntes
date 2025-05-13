@@ -1,10 +1,8 @@
 ---
 title: Estructuras Secuenciales
-description: "Apunte sobre las estructuras secuenciales, y su importancia en la programación"
+description: Las estructuras secuenciales son la forma más básica de programación. En ellas, las instrucciones se ejecutan una tras otra, en orden, desde el principio hasta el final.
 pubDate: 2025-12-5
 ---
-
-Las estructuras secuenciales son la forma más básica de programación. En ellas, las instrucciones se ejecutan una tras otra, en orden, desde el principio hasta el final.
 
 ## ¿Qué es una estructura secuencial?
 

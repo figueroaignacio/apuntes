@@ -1,6 +1,6 @@
 ---
 title: Trabajo Colaborativo
-description: Resumen sobre Git y GitHub, conceptos, uso, etc.
+description: El mundo de Git & GitHub
 pubDate: 2025-12-5
 ---
 
