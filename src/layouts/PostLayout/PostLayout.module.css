@@ -1,0 +1,25 @@
+.prose {
+  max-width: 720px;
+  margin: auto;
+  color: rgb(var(--gray-dark));
+}
+
+.title {
+  margin-bottom: 1em;
+  padding: 1em 0;
+  line-height: 1;
+  font-size: 1.75rem;
+}
+
+.title h1 {
+  margin: 0 0 0.5em 0;
+}
+
+.date {
+  margin-bottom: 0.5em;
+  color: rgb(var(--gray));
+}
+
+.lastUpdatedOn {
+  font-style: italic;
+}

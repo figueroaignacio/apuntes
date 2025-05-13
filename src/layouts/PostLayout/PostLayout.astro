@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import BackButton from "../../components/BackButton/BackButton.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import Layout from "../BaseLayout/Layout.astro";
+import styles from "./PostLayout.module.css";
 
 type Props = CollectionEntry<"apuntes">["data"];
 
@@ -12,13 +13,13 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 <Layout description={description} title={title}>
   <article>
     <BackButton />
-    <div class="prose">
-      <div class="title">
-        <div class="date">
+    <div class={styles.prose}>
+      <div class={styles.title}>
+        <div class={styles.date}>
           <FormattedDate date={pubDate} />
           {
             updatedDate && (
-              <div class="last-updated-on">
+              <div class={styles.lastUpdatedOn}>
                 Last updated on <FormattedDate date={updatedDate} />
               </div>
             )
@@ -32,31 +33,3 @@ const { title, description, pubDate, updatedDate } = Astro.props;
     </div>
   </article>
 </Layout>
-
-<style is:inline>
-  .prose {
-    max-width: 720px;
-    margin: auto;
-    color: rgb(var(--gray-dark));
-  }
-
-  .title {
-    margin-bottom: 1em;
-    padding: 1em 0;
-    line-height: 1;
-    font-size: 1.75rem;
-  }
-
-  .title h1 {
-    margin: 0 0 0.5em 0;
-  }
-
-  .date {
-    margin-bottom: 0.5em;
-    color: rgb(var(--gray));
-  }
-
-  .last-updated-on {
-    font-style: italic;
-  }
-</style>
