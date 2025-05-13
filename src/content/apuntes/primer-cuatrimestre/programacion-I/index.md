@@ -1,10 +1,8 @@
 ---
 title: Programación I
-description: Acá están todos los temas que vimos en la materia.
+description: Introducción a la programación con Python, enfocada en el pensamiento lógico y la resolución de problemas mediante código claro y eficiente.
 pubDate: 2025-12-5
 ---
-
-Introducción a la programación con Python, enfocada en el pensamiento lógico y la resolución de problemas mediante código claro y eficiente.
 
 ## Temas principales:
 

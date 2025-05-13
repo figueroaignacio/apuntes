@@ -1,10 +1,8 @@
 ---
 title: Arquitectura y Sistemas Operativos
-description: Acá están todos los temas que vimos en la materia.
+description: Esta materia brinda una base sólida sobre el funcionamiento interno de las computadoras y los sistemas operativos.
 pubDate: 2025-12-5
 ---
-
-Esta materia brinda una base sólida sobre el funcionamiento interno de las computadoras y los sistemas operativos.
 
 ## Temas principales:
 
