@@ -1,0 +1,27 @@
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid var(--border);
+  border-radius: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 99999px;
+  padding: 0 1rem;
+  text-align: center;
+
+  & a {
+    color: rgb(var(--gray-dark));
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+}

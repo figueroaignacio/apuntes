@@ -2,12 +2,17 @@
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import Layout from "../layouts/BaseLayout/Layout.astro";
 import { indexNotes } from "../lib/config";
+import styles from "./index.module.css";
 ---
 
 <Layout description={SITE_DESCRIPTION} title={SITE_TITLE}>
   <section>
     <div>
-      <img src="https://github.com/figueroaignacio.png" alt="" />
+      <img
+        src="https://github.com/figueroaignacio.png"
+        alt=""
+        class={styles.avatar}
+      />
       <div>
         <h2>Ignacio Figueroa - Apuntes de mi carrera</h2>
       </div>
@@ -21,9 +26,9 @@ import { indexNotes } from "../lib/config";
         indexNotes.map((item) => (
           <li>
             <h2>{item.cuatrimestre}</h2>
-            <div class="box">
+            <div class={styles.box}>
               {item.subjects.map((subject) => (
-                <div class="item">
+                <div class={styles.item}>
                   <a href={subject.href}>{subject.title}</a>
                 </div>
               ))}
@@ -34,31 +39,3 @@ import { indexNotes } from "../lib/config";
     </ul>
   </section>
 </Layout>
-
-<style>
-  img {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .box {
-    display: flex;
-    flex-direction: row;
-    gap: 0.7rem;
-    flex-wrap: wrap;
-  }
-
-  .item {
-    background-color: #fff;
-    border: 1px solid rgb(var(--gray-light));
-    border-radius: 99999px;
-    padding: 0 1rem;
-    text-align: center;
-
-    & a {
-      color: rgb(var(--gray-dark));
-      text-decoration: none;
-      font-size: 0.85rem;
-    }
-  }
-</style>
