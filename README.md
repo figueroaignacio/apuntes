@@ -1,68 +1,23 @@
-# Astro Starter Kit: Blog
+# Facu: Apuntes de Nacho (English)
 
-```sh
-pnpm create astro@latest -- --template blog
-```
+Hola, soy Ignacio Figueroa.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+Este proyecto reúne los apuntes que fui tomando durante mi cursada en la Tecnicatura Universitaria en Programación de la UTN (Universidad Tecnológica Nacional). La idea principal es recopilarlos, organizarlos y compartirlos en la web para que puedan servirle a otras personas.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Los apuntes están agrupados por cuatrimestres, y encontrarás las materias correspondientes junto con los temas vistos en clase.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+El proyecto está desarrollado completamente con Astro y CSS Modules, y utiliza archivos .md y .mdx para gestionar el contenido de forma flexible y ordenada.
 
-Features:
+Elegí Astro porque es un framework de JavaScript orientado al contenido, ideal para proyectos como este.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+# Facu: Nacho's Notes (English)
 
-## 🚀 Project Structure
+Hi, I'm Ignacio Figueroa.
 
-Inside of your Astro project, you'll see the following folders and files:
+This project is a collection of notes I took throughout my time in the University Technical Degree in Programming at UTN (National Technological University). The main goal is to gather, organize, and share them online so they can be useful to others.
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+The notes are organized by semester, and you'll find the subjects along with the topics covered in class.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The project is built entirely with Astro and CSS Modules, using .md and .mdx files to manage content in a flexible and structured way.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+I chose Astro because it's a JavaScript framework focused on content, making it a perfect fit for this kind of project.
