@@ -1,15 +1,8 @@
 ---
 title: Empresas
-description: Empresas, que son, que clasificaciones existen, PYMES, Microemprendimientos.
-pubDate: 2025-13-5
+description: Las empresas son un tipo especial de organización con características específicas que las distinguen. Como toda organización, poseen:
+pubDate: 2025-12-5
 ---
-
-Las empresas son un tipo especial de organización con características específicas que las distinguen. Como toda organización, poseen:
-
-- Objetivos y metas
-- Recursos humanos
-- Recursos materiales
-- Información
 
 ## ¿Qué es una Empresa?
 

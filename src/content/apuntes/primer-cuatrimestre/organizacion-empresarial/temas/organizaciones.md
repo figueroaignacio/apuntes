@@ -1,12 +1,8 @@
 ---
 title: Organizaciones
-description: Apuntes que habla sobre lo que es una organización, sus características, sus fines, sus tipos, etc.
-pubDate: 2025-13-5
+description: Una organización es un sistema social compuesto por individuos o grupos que, teniendo valores compartidos, se interrelacionan y utilizan recursos con los que desarrollan actividades tendientes al logro de objetivos comunes.
+pubDate: 2025-12-5
 ---
-
-Una organización es un sistema social compuesto por individuos o grupos que, teniendo valores compartidos, se interrelacionan y utilizan recursos con los que desarrollan actividades tendientes al logro de objetivos comunes.
-
-Una organización es un ente social creado intencionalmente para lograr determinados objetivos mediante trabajo humano y recursos materiales.
 
 ### Ejemplos de organizaciones:
 
