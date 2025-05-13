@@ -1,6 +1,6 @@
 ---
 title: Empresas
-description: Las empresas son un tipo especial de organización con características específicas que las distinguen. Como toda organización, poseen:
+description: Las empresas son un tipo especial de organización con características específicas que las distinguen.
 pubDate: 2025-12-5
 ---
 
