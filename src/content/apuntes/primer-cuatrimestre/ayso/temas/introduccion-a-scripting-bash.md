@@ -1,10 +1,8 @@
 ---
 title: Introducción a scripting (Bash)
-description: Apunte sobre fundamentos de bash, uso, caracteristicas, etc.
-pubDate: 2025-12-5
+description: Bash (Bourne Again SHell) es un intérprete de comandos y lenguaje de programación de scripts que sirve como interfaz entre el usuario y el sistema operativo. Es el shell predeterminado en la mayoría de distribuciones Linux y en macOS (hasta Catalina).
+pubDate: 2025-4-12
 ---
-
-Bash (Bourne Again SHell) es un intérprete de comandos y lenguaje de programación de scripts que sirve como interfaz entre el usuario y el sistema operativo. Es el shell predeterminado en la mayoría de distribuciones Linux y en macOS (hasta Catalina).
 
 ## 1. Fundamentos de Bash y la Línea de Comandos
 

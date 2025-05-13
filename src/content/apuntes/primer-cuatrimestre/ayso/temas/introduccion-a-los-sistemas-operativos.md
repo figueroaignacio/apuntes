@@ -1,10 +1,8 @@
 ---
 title: Introducción a los sistemas operativos
-description: Apunte sobre fundamentos de sistemas operativos.
-pubDate: 2025-12-5
+description: Un sistema operativo (SO) es el software fundamental que actúa como intermediario entre el hardware de la computadora y las aplicaciones que utilizan los usuarios. Proporciona una capa de abstracción que simplifica y unifica el acceso a los recursos físicos de la máquina.
+pubDate: 2025-4-12
 ---
-
-Un sistema operativo (SO) es el software fundamental que actúa como intermediario entre el hardware de la computadora y las aplicaciones que utilizan los usuarios. Proporciona una capa de abstracción que simplifica y unifica el acceso a los recursos físicos de la máquina.
 
 ## 1. Fundamentos de los Sistemas Operativos
 

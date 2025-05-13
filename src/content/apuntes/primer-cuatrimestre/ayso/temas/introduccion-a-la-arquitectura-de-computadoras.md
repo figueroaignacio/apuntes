@@ -1,10 +1,8 @@
 ---
 title: Introducción a la arquitectura de computadoras
-description: Apunte sobre fundamentos la arquitectura de computadoras.
-pubDate: 2025-12-5
+description: La arquitectura de computadoras estudia la estructura, organización y funcionamiento interno de los sistemas computacionales. Es el puente entre el hardware y el software, permitiendo entender cómo cada línea de código se transforma en acciones concretas ejecutadas por la máquina.
+pubDate: 2025-4-12
 ---
-
-La arquitectura de computadoras estudia la estructura, organización y funcionamiento interno de los sistemas computacionales. Es el puente entre el hardware y el software, permitiendo entender cómo cada línea de código se transforma en acciones concretas ejecutadas por la máquina.
 
 ## 1. Fundamentos de la Arquitectura de Computadoras
 
