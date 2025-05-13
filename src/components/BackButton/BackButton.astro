@@ -1,8 +1,12 @@
 ---
 import styles from "./BackButton.module.css";
+import ArrowLeftIcon from "../../assets/svg/arrow-left.svg";
 ---
 
-<button id="backButton" class={styles.back}>Volver</button>
+<button id="backButton" class={styles.backButton}>
+  <ArrowLeftIcon />
+  <span> Volver </span>
+</button>
 
 <script is:inline>
   function handleBack(e) {
