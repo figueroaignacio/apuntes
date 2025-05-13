@@ -22,16 +22,17 @@ const avatarUrl = "https://github.com/figueroaignacio.png";
       Apuntes organizados por cuatrimestre y materia de la tecnicatura en
       programacion de la UTN (Universidad Tecnológica Nacional).
     </p>
-    <ul>
+    <ul class={styles.list}>
       {
         indexNotes.map((item) => (
-          <li>
-            <h2>{item.cuatrimestre}</h2>
+          <li class={styles.listItem}>
+            <h2 class={styles.heading}>{item.cuatrimestre}</h2>
             <div class={styles.box}>
               {item.subjects.map((subject) => (
-                <div class={styles.item}>
-                  <a href={subject.href}>{subject.title}</a>
-                </div>
+                <a href={subject.href} class={styles.item}>
+                  <span>{subject.title}</span>
+                  <span>{subject.emoji}</span>
+                </a>
               ))}
             </div>
           </li>
