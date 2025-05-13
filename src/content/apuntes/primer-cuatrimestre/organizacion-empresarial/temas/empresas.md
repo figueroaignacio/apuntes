@@ -1,14 +1,10 @@
 ---
 title: Empresas
-description: Las empresas son un tipo especial de organización con características específicas que las distinguen.
+description: Las empresas son organizaciones dedicadas a los negocios con fines de lucro. Son unidades de producción que coordinan factores productivos para crear bienes o prestar servicios que satisfacen necesidades humanas y de otras empresas.
 pubDate: 2025-12-5
 ---
 
-## ¿Qué es una Empresa?
-
-**Definición:** Las empresas son organizaciones dedicadas a los negocios con fines de lucro. Son unidades de producción que coordinan factores productivos para crear bienes o prestar servicios que satisfacen necesidades humanas y de otras empresas.
-
-Las empresas:
+## Las empresas:
 
 - Desarrollan actividades económicas
 - Producen/comercializan bienes y servicios

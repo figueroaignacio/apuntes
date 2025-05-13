@@ -4,6 +4,8 @@ description: Esta materia brinda una base sólida sobre el funcionamiento intern
 pubDate: 2025-12-5
 ---
 
+import CardLink from "../../../../components/CardLink/CardLink.astro"
+
 ## Temas principales:
 
 - Arquitectura de computadoras (CPU, memoria, buses)
@@ -16,6 +18,20 @@ pubDate: 2025-12-5
 
 ## Apuntes
 
-- [Introducción a la arquitectura de computadoras](/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-la-arquitectura-de-computadoras)
-- [Introducción a los sistemas operativos](/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-los-sistemas-operativos)
-- [Introducción a scripting (Bash)](/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-scripting-bash)
+<div class="flex flex-wrap gap">
+  <CardLink
+    title="Introducción a la arquitectura de computadoras"
+    description="La arquitectura de computadoras estudia la estructura, organización y funcionamiento interno de los sistemas computaci..."
+    href="/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-la-arquitectura-de-computadoras"
+  />
+  <CardLink
+    title="Introducción a los sistemas operativos"
+    description="Un sistema operativo (SO) es el software fundamental que actúa como intermediario entre el hardware de la computadora y..."
+    href="/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-los-sistemas-operativos"
+  />
+  <CardLink
+    title="Introducción a scripting (Bash)"
+    description="Bash (Bourne Again SHell) es un intérprete de comandos y lenguaje de programación de scripts que sirve como interfaz entre el usuario y..."
+    href="/apuntes/primer-cuatrimestre/ayso/temas/introduccion-a-scripting-bash"
+  />
+</div>
