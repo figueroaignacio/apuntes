@@ -7,3 +7,9 @@
   max-width: calc(100% - 2em);
   margin: auto;
 }
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}

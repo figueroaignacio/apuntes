@@ -4,14 +4,17 @@ import styles from "./Footer.module.css";
 
 <footer class={styles.footer}>
   <div class={styles.container}>
-    <p>Creado por Ignacio Figueroa - 2025</p>
-    <p>
-      Desarrollado con
-      <svg width="24" height="24"
+    <p class={styles.text}>
+      Creado por Ignacio Figueroa - Desarrollado con
+      <svg width="16" height="16"
         ><use href="/public/icons.svg#astro"></use></svg
       >
       y
-      <svg width="24" height="24"><use href="/public/icons.svg#css"></use></svg>
+      <svg width="16" height="16"><use href="/public/icons.svg#css"></use></svg>
+    </p>
+    <p>
+      Fun fact: Me gusta React y Astro. Mas react que astro. Bueno... depende la
+      situación.
     </p>
   </div>
 </footer>
