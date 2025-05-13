@@ -1,0 +1,22 @@
+---
+import ArrowRight from "../../assets/svg/arrow-right.svg";
+import styles from "./CardLink.module.css";
+
+interface CardLinkProps {
+  title: string;
+  href: string;
+  description: string;
+}
+
+const { title, href, description } = Astro.props;
+---
+
+<a href={href} class={styles.cardLink}>
+  <div>
+    <span>
+      {title}
+    </span>
+    <p>{description}</p>
+  </div>
+  <ArrowRight />
+</a>

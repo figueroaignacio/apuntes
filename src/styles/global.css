@@ -125,3 +125,17 @@ a,
 li {
   font-size: 1rem;
 }
+
+/* Utilities */
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap {
+  gap: 1.25rem;
+}
