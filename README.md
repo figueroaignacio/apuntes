@@ -1,4 +1,4 @@
-# Facu: Apuntes de Nacho (English)
+# Facu Apuntes de Nacho (English)
 
 Hola, soy Ignacio Figueroa.
 
@@ -10,7 +10,7 @@ El proyecto está desarrollado completamente con Astro y CSS Modules, y utiliza 
 
 Elegí Astro porque es un framework de JavaScript orientado al contenido, ideal para proyectos como este.
 
-# Facu: Nacho's Notes (English)
+# Nacho's University Notes (English)
 
 Hi, I'm Ignacio Figueroa.
 
