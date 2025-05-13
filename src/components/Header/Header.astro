@@ -1,6 +1,7 @@
 ---
 import Logo from "../Logo/Logo.astro";
 import styles from "./Header.module.css";
+import MenuIcon from "../../assets/svg/hamburguer.svg";
 ---
 
 <header class={styles.header}>
@@ -12,9 +13,7 @@ import styles from "./Header.module.css";
         id="menuButton"
         aria-label="Toggle menu"
       >
-        <svg width="24" height="24">
-          <use href="/icons.svg#hamburguer"></use>
-        </svg>
+        <MenuIcon />
       </button>
       <ul class={styles.list} id="menuList" data-state="closed">
         <li class={styles.listItem}>
