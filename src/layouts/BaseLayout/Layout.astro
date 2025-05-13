@@ -70,7 +70,7 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <div class={styles.layoutGrid}>
-      <Header />
+      <Header client:load />
       <main>
         <slot />
       </main>

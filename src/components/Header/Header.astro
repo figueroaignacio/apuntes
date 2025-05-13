@@ -1,31 +1,77 @@
 ---
+import Logo from "../Logo/Logo.astro";
 import styles from "./Header.module.css";
 ---
 
 <header class={styles.header}>
-  <nav>
-    <ul class={styles.list}>
-      <li class={styles.listItem}>
-        <a href="/about" class={styles.listAnchor}> Acerca </a>
-      </li>
-      <li class={styles.listItem}>
-        <a
-          href="https://ignaciofigueroa.vercel.app"
-          class={styles.listAnchor}
-          target="_blank"
-        >
-          Portafolio
-        </a>
-      </li>
-      <li class={styles.listItem}>
-        <a
-          href="https://github.com/figueroaignacio/n3o-apuntes"
-          class={styles.listAnchor}
-          target="_blank"
-        >
-          Código fuente
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <div class={styles.container}>
+    <nav class={styles.nav}>
+      <Logo />
+      <button
+        class={styles.menuButton}
+        id="menuButton"
+        aria-label="Toggle menu"
+      >
+        <svg width="24" height="24">
+          <use href="/public/icons.svg#hamburguer"></use>
+        </svg>
+      </button>
+      <ul class={styles.list} id="menuList" data-state="closed">
+        <li class={styles.listItem}>
+          <a href="/about" class={styles.listAnchor}>Acerca</a>
+        </li>
+        <li class={styles.listItem}>
+          <a
+            href="https://ignaciofigueroa.vercel.app"
+            class={styles.listAnchor}
+            target="_blank">Portafolio</a
+          >
+        </li>
+        <li class={styles.listItem}>
+          <a
+            href="https://github.com/figueroaignacio/n3o-apuntes"
+            class={styles.listAnchor}
+            target="_blank">Código fuente</a
+          >
+        </li>
+      </ul>
+      <div class={styles.overlay} id="menuOverlay" data-state="closed"></div>
+    </nav>
+  </div>
 </header>
+
+<script is:inline>
+  function toggleMenu() {
+    const menuList = document.getElementById("menuList");
+    const menuOverlay = document.getElementById("menuOverlay");
+    const isOpen = menuList.getAttribute("data-state") === "open";
+
+    menuList.setAttribute("data-state", isOpen ? "closed" : "open");
+    menuOverlay.setAttribute("data-state", isOpen ? "closed" : "open");
+    document.body.style.overflow = isOpen ? "" : "hidden";
+  }
+
+  function setupMenu() {
+    const menuButton = document.getElementById("menuButton");
+    const menuOverlay = document.getElementById("menuOverlay");
+
+    menuButton.removeEventListener("click", toggleMenu);
+    menuOverlay.removeEventListener("click", toggleMenu);
+
+    menuButton.addEventListener("click", toggleMenu);
+    menuOverlay.addEventListener("click", toggleMenu);
+
+    document.addEventListener("keydown", (e) => {
+      if (
+        e.key === "Escape" &&
+        document.getElementById("menuList").getAttribute("data-state") ===
+          "open"
+      ) {
+        toggleMenu();
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", setupMenu);
+  document.addEventListener("astro:after-swap", setupMenu);
+</script>
