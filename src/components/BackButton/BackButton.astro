@@ -2,4 +2,28 @@
 import styles from "./BackButton.module.css";
 ---
 
-<a href="/" class={styles.back}>Volver</a>
+<button id="backButton" class={styles.back}>Volver</button>
+
+<script is:inline>
+  function handleBack(e) {
+    e.preventDefault();
+
+    if (window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = "/";
+    }
+  }
+
+  function setup() {
+    const backButton = document.getElementById("backButton");
+
+    if (backButton) {
+      backButton.removeEventListener("click", handleBack);
+      backButton.addEventListener("click", handleBack);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", setup);
+  document.addEventListener("astro:after-swap", setup);
+</script>

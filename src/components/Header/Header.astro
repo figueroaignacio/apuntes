@@ -50,7 +50,7 @@ import MenuIcon from "../../assets/svg/hamburguer.svg";
     document.body.style.overflow = isOpen ? "" : "hidden";
   }
 
-  function setupMenu() {
+  function setup() {
     const menuButton = document.getElementById("menuButton");
     const menuOverlay = document.getElementById("menuOverlay");
 
@@ -71,6 +71,6 @@ import MenuIcon from "../../assets/svg/hamburguer.svg";
     });
   }
 
-  document.addEventListener("DOMContentLoaded", setupMenu);
-  document.addEventListener("astro:after-swap", setupMenu);
+  document.addEventListener("DOMContentLoaded", setup);
+  document.addEventListener("astro:after-swap", setup);
 </script>
