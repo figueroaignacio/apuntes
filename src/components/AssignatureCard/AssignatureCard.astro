@@ -1,0 +1,16 @@
+---
+import styles from './Assignature.module.css';
+
+interface AssignatureCardProps {
+  title: string;
+  emoji: string;
+  href: string;
+}
+
+const { title, emoji, href } = Astro.props;
+---
+
+<a href={href} class={styles.item}>
+  <span>{title}</span>
+  <span>{emoji}</span>
+</a>

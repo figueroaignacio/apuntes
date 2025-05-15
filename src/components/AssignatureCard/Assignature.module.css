@@ -1,0 +1,30 @@
+.item {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  gap: 1rem;
+  transition: transform 40ms ease;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  & span:nth-child(1) {
+    align-self: flex-start;
+    font-weight: bold;
+    color: var(--muted-foreground);
+    font-size: 1.25rem;
+  }
+
+  & span:nth-child(2) {
+    align-self: flex-end;
+    font-size: 1.75rem;
+  }
+}

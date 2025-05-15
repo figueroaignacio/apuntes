@@ -1,40 +1,34 @@
 ---
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
-import Layout from "../layouts/BaseLayout/Layout.astro";
-import { indexNotes } from "../lib/config";
-import styles from "../styles/Home.module.css";
-const avatarUrl = "https://github.com/figueroaignacio.png";
+import CareerCard from '../components/CareerCard/CareerCard.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Layout from '../layouts/BaseLayout/Layout.astro';
+import { careers } from '../lib/config';
+import styles from '../styles/Home.module.css';
+const avatarUrl = 'https://github.com/figueroaignacio.png';
 ---
 
 <Layout description={SITE_DESCRIPTION} title={SITE_TITLE}>
   <section>
     <div>
-      <img
-        src={avatarUrl}
-        alt="Ignacio Figueroa's avatar"
-        class={styles.avatar}
-      />
       <div>
-        <h2>Ignacio Figueroa - Apuntes de mi carrera</h2>
+        <h1>Mis apuntes 📝</h1>
       </div>
     </div>
     <p>
-      Apuntes organizados por cuatrimestre y materia de la tecnicatura en
-      programacion de la UTN (Universidad Tecnológica Nacional).
+      Este proyecto recopila los apuntes que voy tomando durante mi formación en desarrollador de
+      software, ya sean carreras universitarias o cursos.
     </p>
     <ul class={styles.list}>
       {
-        indexNotes.map((item) => (
-          <li class={styles.listItem}>
-            <h2 class={styles.heading}>{item.cuatrimestre}</h2>
-            <div class={styles.box}>
-              {item.subjects.map((subject) => (
-                <a href={subject.href} class={styles.item}>
-                  <span>{subject.title}</span>
-                  <span>{subject.emoji}</span>
-                </a>
-              ))}
-            </div>
+        careers.map((item) => (
+          <li>
+            <CareerCard
+              career={item.title}
+              href={item.href}
+              university={item.university}
+              description={item.description}
+              image={item.image}
+            />
           </li>
         ))
       }

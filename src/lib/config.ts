@@ -1,47 +1,11 @@
-export const indexNotes = [
+export const careers = [
   {
-    cuatrimestre: 'Primer Cuatrimestre',
-    subjects: [
-      {
-        title: 'Programación I',
-        emoji: '💻',
-        href: '/apuntes/primer-cuatrimestre/programacion-i',
-      },
-      {
-        title: 'Arquitectura y Sistemas Operativos',
-        emoji: '🖥️',
-        href: '/apuntes/primer-cuatrimestre/ayso',
-      },
-      {
-        title: 'Organización Empresarial',
-        emoji: '🏢',
-        href: '/apuntes/primer-cuatrimestre/organizacion-empresarial',
-      },
-      {
-        title: 'Matemática',
-        emoji: '🔣',
-        href: '/apuntes/primer-cuatrimestre/matematica',
-      },
-    ],
-  },
-  {
-    cuatrimestre: 'Segundo Cuatrimestre (no disponible por el momento)',
-    subjects: [
-      {
-        title: 'Programación II',
-        emoji: '💻',
-        href: '/apuntes/segundo-cuatrimestre/programacion-ii',
-      },
-      {
-        title: 'Base de Datos I',
-        emoji: '🗄️',
-        href: '/apuntes/segundo-cuatrimestre/base-de-datos-i',
-      },
-      {
-        title: 'Inglés ',
-        emoji: '🗣️',
-        href: '/apuntes/segundo-cuatrimestre/ingles',
-      },
-    ],
+    title: 'Tecnicatura Universitaria en Programación',
+    university: 'UTN (Universidad Tecnológica Nacional)',
+    status: 'Actualmente cursando',
+    href: '/apuntes/tup',
+    description:
+      'Esta carrera está pensada para formar profesionales con sólidas habilidades técnicas en programación y desarrollo de software.',
+    image: '/public/utn-logo.png',
   },
 ];

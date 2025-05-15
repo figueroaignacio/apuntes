@@ -1,0 +1,56 @@
+.img {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 6rem;
+  height: auto;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+.careerCard {
+  border: 1px solid var(--border);
+  border-radius: 0.4375rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+
+  &:hover {
+    border: 1px solid var(--primary);
+  }
+}
+
+.anchor {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  & h2 {
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  & p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+
+  & p:nth-child(2) {
+    color: var(--muted-foreground);
+  }
+
+  & p:nth-child(3) {
+    border: 1px solid var(--border);
+    width: fit-content;
+    padding: 0 0.75rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: var(--primary);
+  }
+
+  & svg {
+    align-self: flex-end;
+  }
+}

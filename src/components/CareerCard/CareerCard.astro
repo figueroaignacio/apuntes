@@ -1,0 +1,26 @@
+---
+import styles from './CareerCard.module.css';
+
+interface CareerCardProps {
+  career: string;
+  university: string;
+  href: string;
+  description: string;
+  image: string;
+}
+
+const { href, career, university, description, image } = Astro.props;
+---
+
+<div class={styles.careerCard}>
+  <img src={image} alt="" class={styles.img} />
+  <a href={href} class={styles.anchor}>
+    <h2>
+      {career}
+    </h2>
+    <p>
+      {description}
+    </p>
+    <p>{university}</p>
+  </a>
+</div>
