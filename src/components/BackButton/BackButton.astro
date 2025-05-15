@@ -1,6 +1,6 @@
 ---
-import styles from "./BackButton.module.css";
-import ArrowLeftIcon from "../../assets/svg/arrow-left.svg";
+import styles from './BackButton.module.css';
+import ArrowLeftIcon from '../../assets/svg/arrow-left.svg';
 ---
 
 <button id="backButton" class={styles.backButton}>
@@ -15,19 +15,19 @@ import ArrowLeftIcon from "../../assets/svg/arrow-left.svg";
     if (window.history.length > 1) {
       window.history.back();
     } else {
-      window.location.href = "/";
+      window.location.href = '/';
     }
   }
 
   function setup() {
-    const backButton = document.getElementById("backButton");
+    const backButton = document.getElementById('backButton');
 
     if (backButton) {
-      backButton.removeEventListener("click", handleBack);
-      backButton.addEventListener("click", handleBack);
+      backButton.removeEventListener('click', handleBack);
+      backButton.addEventListener('click', handleBack);
     }
   }
 
-  document.addEventListener("DOMContentLoaded", setup);
-  document.addEventListener("astro:after-swap", setup);
+  document.addEventListener('DOMContentLoaded', setup);
+  document.addEventListener('astro:after-swap', setup);
 </script>
