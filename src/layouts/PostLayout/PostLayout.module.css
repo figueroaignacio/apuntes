@@ -32,6 +32,11 @@
   color: var(--muted-foreground);
 }
 
+.prose h2 {
+  border-bottom: 1px solid var(--border);
+  font-size: 1.25rem;
+}
+
 .prose p {
   margin-bottom: 1.25em;
   font-size: 1.05rem;
