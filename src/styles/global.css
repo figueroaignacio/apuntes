@@ -32,7 +32,6 @@ body {
   text-align: left;
   background-color: var(--background);
   color: var(--foreground);
-  background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
   font-size: 20px;
