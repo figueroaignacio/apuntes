@@ -1,5 +1,6 @@
 .footer {
   border-top: 1px solid var(--border);
+  background-color: var(--card);
 }
 
 .container {

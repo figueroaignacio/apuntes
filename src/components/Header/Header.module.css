@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid var(--border);
   padding-block: 1rem;
+  background-color: var(--card);
 }
 
 .container {
@@ -56,7 +57,7 @@
   z-index: 90;
 }
 
-.overlay[data-state="open"] {
+.overlay[data-state='open'] {
   display: block;
 }
 
@@ -82,7 +83,7 @@
     transform: translateX(100%);
   }
 
-  .list[data-state="open"] {
+  .list[data-state='open'] {
     display: flex;
     transform: translateX(0);
   }
