@@ -141,3 +141,12 @@ li {
 .gap {
   gap: 1.25rem;
 }
+
+.assignatureTitle {
+  background-color: var(--primary);
+  border-radius: 7px;
+  width: fit-content;
+  color: white;
+  padding: 0 1rem;
+  margin-block: 5rem 2rem;
+}
