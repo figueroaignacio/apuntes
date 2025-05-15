@@ -6,6 +6,7 @@
   --accent: #f1f5f9;
   --border: #cbd4e0;
   --primary: #3b82f6;
+  --font-sans: 'IBM Plex Sans Variable', sans-serif;
 }
 
 @font-face {
@@ -21,7 +22,7 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans Variable', sans-serif;
+  font-family: var(--font-sans);
   margin: 0;
   padding: 0;
   text-align: left;
@@ -43,8 +44,8 @@ main {
 
 code {
   padding: 2px 5px;
-  background-color: rgb(var(--gray-light));
   border-radius: 2px;
+  font-family: var(--font-sans);
 }
 
 pre {
