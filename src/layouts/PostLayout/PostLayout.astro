@@ -13,14 +13,19 @@ type Props = CollectionEntry<'apuntes'>['data'] & {
 };
 
 const { title, description, pubDate, updatedDate, toc } = Astro.props;
+const hasToc = toc.length > 0;
 ---
 
 <Layout description={description} title={title}>
   <article class={styles.wrapper}>
-    <div class={styles.contentGrid}>
-      <aside class={styles.tocWrapper}>
-        <Toc toc={toc} />
-      </aside>
+    <div class={`${styles.contentGrid} ${!hasToc ? styles.noToc : ''}`}>
+      {
+        hasToc && (
+          <aside class={styles.tocWrapper}>
+            <Toc toc={toc} />
+          </aside>
+        )
+      }
 
       <div class={styles.postContent}>
         <BackButton />
