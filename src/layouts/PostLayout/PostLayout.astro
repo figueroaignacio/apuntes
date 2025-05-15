@@ -1,35 +1,47 @@
 ---
+import type { MarkdownHeading } from 'astro';
 import type { CollectionEntry } from 'astro:content';
+
 import BackButton from '../../components/BackButton/BackButton.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
+import Toc from '../../components/Toc/Toc.astro';
 import Layout from '../BaseLayout/Layout.astro';
 import styles from './PostLayout.module.css';
 
-type Props = CollectionEntry<'apuntes'>['data'];
+type Props = CollectionEntry<'apuntes'>['data'] & {
+  toc: MarkdownHeading[];
+};
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, toc } = Astro.props;
 ---
 
 <Layout description={description} title={title}>
-  <article>
-    <BackButton />
-    <div class={styles.prose}>
-      <div class={styles.title}>
-        <div class={styles.date}>
-          <FormattedDate date={pubDate} />
-          {
-            updatedDate && (
-              <div class={styles.lastUpdatedOn}>
-                Last updated on <FormattedDate date={updatedDate} />
-              </div>
-            )
-          }
+  <article class={styles.wrapper}>
+    <div class={styles.contentGrid}>
+      <aside class={styles.tocWrapper}>
+        <Toc toc={toc} />
+      </aside>
+
+      <div class={styles.postContent}>
+        <BackButton />
+        <div class={styles.titleBlock}>
+          <div class={styles.date}>
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <div class={styles.lastUpdatedOn}>
+                  Última actualización <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+          <h1 class={styles.title}>{title}</h1>
+          <p class={styles.description}>{description}</p>
+          <hr />
         </div>
-        <h1 class={styles.title}>{title}</h1>
-        <p class={styles.description}>{description}</p>
-        <hr />
+
+        <slot />
       </div>
-      <slot />
     </div>
   </article>
 </Layout>

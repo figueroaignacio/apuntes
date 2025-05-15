@@ -1,14 +1,7 @@
-.rootLayout {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
 @media (width > 724px) {
   .rootLayout {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    gap: 3rem;
   }
 }

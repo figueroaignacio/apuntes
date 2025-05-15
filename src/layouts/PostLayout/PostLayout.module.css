@@ -1,94 +1,121 @@
-.prose {
-  max-width: 720px;
-  margin: auto;
+.wrapper {
+  width: 100%;
+  padding: 2rem 4vw;
+  box-sizing: border-box;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .contentGrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tocWrapper {
+    display: none;
+  }
+}
+
+.tocWrapper {
+  position: sticky;
+  top: 5rem;
+  overflow-y: auto;
+}
+
+.postContent {
+  min-width: 0;
   color: var(--foreground);
   line-height: 1.75;
   font-size: 1rem;
 }
 
-.prose .title {
-  margin-bottom: 1em;
-  line-height: 1.2;
-  font-size: 1.875rem;
+.titleBlock {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
   font-weight: 700;
   color: var(--foreground);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
-.prose .description {
-  font-size: 1.05rem;
-  line-height: 1.75;
+.description {
+  font-size: 1.1rem;
   color: var(--muted-foreground);
+  margin-bottom: 1rem;
 }
 
-.prose .date {
-  margin-bottom: 0.5em;
+.date {
   font-size: 0.9rem;
   color: var(--muted-foreground);
+  margin-bottom: 0.5rem;
 }
 
-.prose .lastUpdatedOn {
+.lastUpdatedOn {
   font-style: italic;
   font-size: 0.9rem;
   color: var(--muted-foreground);
 }
 
-.prose h2 {
+.postContent h2 {
   border-bottom: 1px solid var(--border);
-  font-size: 1.25rem;
-  padding-bottom: 0.75rem;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
-.prose p {
-  margin-bottom: 1.25em;
+.postContent p {
+  margin-bottom: 1.5em;
   font-size: 1.05rem;
   line-height: 1.8;
-  color: var(--foreground);
 }
 
-.prose ul {
+.postContent ul {
   padding-left: 1.5rem;
   margin-bottom: 1.25em;
-  list-style-type: disc;
 }
 
-.prose ul li {
+.postContent ul li {
   margin-bottom: 0.5em;
-  color: var(--foreground);
   font-size: 1rem;
   line-height: 1.7;
 }
 
-.prose table {
+.postContent table {
   width: 100%;
   border-collapse: collapse;
   margin: 2em 0;
   font-size: 0.95rem;
+  overflow-x: auto;
+  display: block;
 }
 
-.prose th,
-.prose td {
+.postContent th,
+.postContent td {
   border: 1px solid var(--border);
   padding: 0.75em 1em;
   text-align: left;
 }
 
-.prose th {
+.postContent th {
   background-color: var(--accent);
   color: var(--foreground);
   font-weight: 600;
 }
 
-.prose td {
+.postContent td {
   background-color: var(--card);
-  color: var(--foreground);
 }
 
-.prose table {
-  overflow-x: auto;
-  display: block;
-}
-
-.prose pre {
+.postContent pre {
   background-color: #f1f5f9;
   color: #1e293b;
   padding: 1em;
@@ -98,7 +125,7 @@
   font-size: 0.95rem;
 }
 
-.prose blockquote {
+.postContent blockquote {
   border-left: 4px solid var(--primary);
   padding-left: 1rem;
   color: var(--muted-foreground);

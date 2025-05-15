@@ -1,0 +1,28 @@
+---
+import styles from './Toc.module.css';
+
+interface TocItem {
+  text: string;
+  slug: string;
+  depth: number;
+}
+
+interface Props {
+  toc: TocItem[];
+}
+
+const { toc } = Astro.props as Props;
+---
+
+<nav class={styles.toc}>
+  <p class={styles.title}>En esta página</p>
+  <ul class={styles.list}>
+    {
+      toc.map((heading) => (
+        <li class={styles[`depth${heading.depth}`]}>
+          <a href={`#${heading.slug}`}>{heading.text}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

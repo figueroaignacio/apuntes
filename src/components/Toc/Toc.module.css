@@ -1,0 +1,38 @@
+.toc {
+  max-height: calc(100vh - 5rem);
+  font-size: 0.875rem;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.depth2:hover,
+.depth3:hover,
+.depth4:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.depth2 {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  color: var(--muted-foreground);
+}
+
+.depth3 {
+  margin-left: 2rem;
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+}
+
+.depth4 {
+  margin-left: 3rem;
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+}
