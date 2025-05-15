@@ -1,11 +1,11 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import BackButton from "../../components/BackButton/BackButton.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
-import Layout from "../BaseLayout/Layout.astro";
-import styles from "./PostLayout.module.css";
+import type { CollectionEntry } from 'astro:content';
+import BackButton from '../../components/BackButton/BackButton.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Layout from '../BaseLayout/Layout.astro';
+import styles from './PostLayout.module.css';
 
-type Props = CollectionEntry<"apuntes">["data"];
+type Props = CollectionEntry<'apuntes'>['data'];
 
 const { title, description, pubDate, updatedDate } = Astro.props;
 ---
