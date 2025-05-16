@@ -57,8 +57,6 @@ body {
 }
 
 main {
-  max-width: calc(100% - 2em);
-  margin: auto;
   padding: 1rem;
 }
 

@@ -1,7 +1,12 @@
+.main {
+  align-self: center;
+  justify-self: center;
+}
+
 @media (width > 724px) {
   .rootLayout {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
   }
 }
