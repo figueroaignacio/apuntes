@@ -111,6 +111,11 @@
   background-color: var(--card);
 }
 
+.postContent code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 .postContent pre {
   background-color: #f1f5f9;
   color: #1e293b;
