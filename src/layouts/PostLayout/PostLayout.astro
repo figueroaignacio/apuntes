@@ -1,12 +1,16 @@
 ---
+// Astro
 import type { MarkdownHeading } from 'astro';
 import type { CollectionEntry } from 'astro:content';
 
-import BackButton from '../../components/BackButton/BackButton.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import Toc from '../../components/Toc/Toc.astro';
-import Layout from '../BaseLayout/Layout.astro';
+// Styles
 import styles from './PostLayout.module.css';
+
+// Components
+import BackButton from '@/components/BackButton/BackButton.astro';
+import FormattedDate from '@/components/FormattedDate.astro';
+import Toc from '@/components/Toc/Toc.astro';
+import Layout from '../BaseLayout/Layout.astro';
 
 type Props = CollectionEntry<'apuntes'>['data'] & {
   toc: MarkdownHeading[];
@@ -26,7 +30,6 @@ const hasToc = toc.length > 0;
           </aside>
         )
       }
-
       <div class={styles.postContent}>
         <BackButton />
         <div class={styles.titleBlock}>
@@ -44,7 +47,6 @@ const hasToc = toc.length > 0;
           <p class={styles.description}>{description}</p>
           <hr />
         </div>
-
         <slot />
       </div>
     </div>

@@ -1,7 +1,10 @@
 ---
+// Astro
 import { type CollectionEntry, getCollection, render } from 'astro:content';
-import PostLayout from '../../layouts/PostLayout/PostLayout.astro';
-import { components } from '../../lib/mdx-components';
+
+// Components
+import PostLayout from '@/layouts/PostLayout/PostLayout.astro';
+import { components } from '@/lib/mdx-components';
 
 export async function getStaticPaths() {
   const posts = await getCollection('apuntes');

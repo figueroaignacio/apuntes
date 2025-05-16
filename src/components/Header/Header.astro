@@ -1,18 +1,17 @@
 ---
-import Logo from "../Logo/Logo.astro";
-import styles from "./Header.module.css";
-import MenuIcon from "../../assets/svg/hamburguer.svg";
+// Styles
+import styles from './Header.module.css';
+
+// Components
+import Logo from '@/components/Logo/Logo.astro';
+import MenuIcon from '@/assets/svg/hamburguer.svg';
 ---
 
 <header class={styles.header}>
   <div class={styles.container}>
     <nav class={styles.nav}>
       <Logo />
-      <button
-        class={styles.menuButton}
-        id="menuButton"
-        aria-label="Toggle menu"
-      >
+      <button class={styles.menuButton} id="menuButton" aria-label="Toggle menu">
         <MenuIcon />
       </button>
       <ul class={styles.list} id="menuList" data-state="closed">
@@ -20,10 +19,8 @@ import MenuIcon from "../../assets/svg/hamburguer.svg";
           <a href="/about" class={styles.listAnchor}>Acerca</a>
         </li>
         <li class={styles.listItem}>
-          <a
-            href="https://ignaciofigueroa.vercel.app"
-            class={styles.listAnchor}
-            target="_blank">Portafolio</a
+          <a href="https://ignaciofigueroa.vercel.app" class={styles.listAnchor} target="_blank"
+            >Portafolio</a
           >
         </li>
         <li class={styles.listItem}>
@@ -41,36 +38,35 @@ import MenuIcon from "../../assets/svg/hamburguer.svg";
 
 <script is:inline>
   function toggleMenu() {
-    const menuList = document.getElementById("menuList");
-    const menuOverlay = document.getElementById("menuOverlay");
-    const isOpen = menuList.getAttribute("data-state") === "open";
+    const menuList = document.getElementById('menuList');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const isOpen = menuList.getAttribute('data-state') === 'open';
 
-    menuList.setAttribute("data-state", isOpen ? "closed" : "open");
-    menuOverlay.setAttribute("data-state", isOpen ? "closed" : "open");
-    document.body.style.overflow = isOpen ? "" : "hidden";
+    menuList.setAttribute('data-state', isOpen ? 'closed' : 'open');
+    menuOverlay.setAttribute('data-state', isOpen ? 'closed' : 'open');
+    document.body.style.overflow = isOpen ? '' : 'hidden';
   }
 
   function setup() {
-    const menuButton = document.getElementById("menuButton");
-    const menuOverlay = document.getElementById("menuOverlay");
+    const menuButton = document.getElementById('menuButton');
+    const menuOverlay = document.getElementById('menuOverlay');
 
-    menuButton.removeEventListener("click", toggleMenu);
-    menuOverlay.removeEventListener("click", toggleMenu);
+    menuButton.removeEventListener('click', toggleMenu);
+    menuOverlay.removeEventListener('click', toggleMenu);
 
-    menuButton.addEventListener("click", toggleMenu);
-    menuOverlay.addEventListener("click", toggleMenu);
+    menuButton.addEventListener('click', toggleMenu);
+    menuOverlay.addEventListener('click', toggleMenu);
 
-    document.addEventListener("keydown", (e) => {
+    document.addEventListener('keydown', (e) => {
       if (
-        e.key === "Escape" &&
-        document.getElementById("menuList").getAttribute("data-state") ===
-          "open"
+        e.key === 'Escape' &&
+        document.getElementById('menuList').getAttribute('data-state') === 'open'
       ) {
         toggleMenu();
       }
     });
   }
 
-  document.addEventListener("DOMContentLoaded", setup);
-  document.addEventListener("astro:after-swap", setup);
+  document.addEventListener('DOMContentLoaded', setup);
+  document.addEventListener('astro:after-swap', setup);
 </script>
