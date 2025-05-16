@@ -1,6 +1,5 @@
 .toc {
-  max-height: calc(100vh - 5rem);
-  font-size: 0.875rem;
+  max-height: calc(100vh - 10rem);
 }
 
 .title {
@@ -10,6 +9,10 @@
 
 .list {
   list-style: none;
+}
+
+.text {
+  font-size: 0.8rem;
 }
 
 .depth2:hover,
@@ -27,12 +30,10 @@
 
 .depth3 {
   margin-left: 2rem;
-  font-size: 0.85rem;
   color: var(--muted-foreground);
 }
 
 .depth4 {
   margin-left: 3rem;
-  font-size: 0.8rem;
   color: var(--muted-foreground);
 }

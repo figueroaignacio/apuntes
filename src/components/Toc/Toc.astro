@@ -21,7 +21,9 @@ const { toc } = Astro.props as Props;
       <ul class={styles.list}>
         {toc.map((heading) => (
           <li class={styles[`depth${heading.depth}`]}>
-            <a href={`#${heading.slug}`}>{heading.text}</a>
+            <a href={`#${heading.slug}`} class={styles.text}>
+              {heading.text}
+            </a>
           </li>
         ))}
       </ul>
