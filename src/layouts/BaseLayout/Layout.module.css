@@ -1,11 +1,12 @@
 .main {
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80dvh;
 }
 
 @media (width > 724px) {
   .rootLayout {
-    min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;
   }

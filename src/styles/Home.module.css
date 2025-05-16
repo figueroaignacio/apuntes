@@ -1,3 +1,7 @@
+.homeSection {
+  max-width: 724px;
+}
+
 .list {
   display: flex;
   flex-direction: column;
