@@ -6,7 +6,6 @@
 
 .container {
   max-width: calc(100% - 2em);
-  padding: 0 5.2vw;
   margin: auto;
 }
 

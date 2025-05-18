@@ -1,10 +1,19 @@
 .homeSection {
   max-width: 724px;
+  margin-inline: auto;
+  min-height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  & h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
   list-style: none;
 }

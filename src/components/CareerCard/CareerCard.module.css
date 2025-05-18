@@ -2,7 +2,7 @@
   border: 1px solid var(--border);
   border-radius: 0.4375rem;
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 2rem;
   position: relative;
   overflow: hidden;
   z-index: 10;
@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  gap: 1rem;
 
   & h2 {
     align-self: flex-start;
