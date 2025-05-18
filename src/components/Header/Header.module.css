@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid var(--border);
-  padding-block: 1rem;
+  padding-block: 0.75rem;
   background-color: var(--card);
 }
 
