@@ -3,11 +3,13 @@
 import styles from '@/styles/About.module.css';
 
 // Components
+import BackButton from '@/components/BackButton/BackButton.astro';
 import Layout from '@/layouts/BaseLayout/Layout.astro';
 ---
 
 <Layout title="Acerca de este proyecto" description="">
-  <section>
+  <section class={styles.about}>
+    <BackButton />
     <h1>Acerca de este mini proyecto.</h1>
     <p class={styles.text}>
       Mi nombre es Ignacio Figueroa y soy desarrollador web especializado en desarrollo fullstack.
