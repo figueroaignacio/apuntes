@@ -22,7 +22,7 @@ import ArrowLeftIcon from '@/assets/svg/arrow-left.svg';
     }
   }
 
-  function setup() {
+  function main() {
     const backButton = document.getElementById('backButton');
 
     if (backButton) {
@@ -31,6 +31,6 @@ import ArrowLeftIcon from '@/assets/svg/arrow-left.svg';
     }
   }
 
-  document.addEventListener('DOMContentLoaded', setup);
-  document.addEventListener('astro:after-swap', setup);
+  document.addEventListener('DOMContentLoaded', main);
+  document.addEventListener('astro:after-swap', main);
 </script>
