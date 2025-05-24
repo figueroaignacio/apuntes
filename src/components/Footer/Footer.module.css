@@ -1,16 +1,38 @@
 .footer {
   border-top: 1px solid var(--border);
   background-color: var(--card);
+  padding-block: 2rem;
 }
 
 .container {
-  padding: 0 5.2vw;
+  width: 724px;
   max-width: calc(100% - 2em);
-  margin: auto;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .text {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  width: fit-content;
+  font-size: 0.75rem;
 }

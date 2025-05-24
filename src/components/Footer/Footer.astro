@@ -5,17 +5,34 @@ import styles from './Footer.module.css';
 // Components
 import AstroIcon from '@/assets/svg/astro.svg';
 import CSSIcon from '@/assets/svg/css.svg';
+import MarkdownIcon from '@/assets/svg/markdown.svg';
+import MDXIcon from '@/assets/svg/mdx.svg';
 ---
 
 <footer class={styles.footer}>
   <div class={styles.container}>
-    <p>Creado por Ignacio Figueroa - Abril 2025</p>
-    <p class={styles.text}>
-      Desarrollado con
-      <AstroIcon />
-      y
-      <CSSIcon />
-    </p>
-    <p>Fun fact: Me gusta React y Astro. Mas react que astro. Bueno... depende la situación.</p>
+    <p class={styles.text}>Desarrollado con</p>
+    <div class={styles.badges}>
+      <div class={styles.badge}>
+        <AstroIcon />
+        <span>Astro</span>
+      </div>
+      <div class={styles.badge}>
+        <AstroIcon />
+        <span>Astro Content Collections</span>
+      </div>
+      <div class={styles.badge}>
+        <CSSIcon />
+        <span>CSS Modules</span>
+      </div>
+      <div class={styles.badge}>
+        <MarkdownIcon />
+        <span>Markdown</span>
+      </div>
+      <div class={styles.badge}>
+        <MDXIcon />
+        <span>MDX</span>
+      </div>
+    </div>
   </div>
 </footer>

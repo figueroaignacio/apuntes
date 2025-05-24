@@ -8,6 +8,6 @@
 @media (width > 724px) {
   .rootLayout {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
   }
 }
