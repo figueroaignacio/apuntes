@@ -1,0 +1,14 @@
+---
+import HeroGif from '@/assets/img/room.gif';
+import styles from './Hero.module.css';
+
+const avatar = 'https://github.com/figueroaignacio.png';
+---
+
+<div class={styles.hero}>
+  <img src={HeroGif.src} alt="Hero gif" class={styles.gif} />
+  <div class={styles.profile}>
+    <img src={avatar} alt="Ignacio Figueroa" class={styles.avatar} />
+    <h1>Ignacio Figueroa</h1>
+  </div>
+</div>
