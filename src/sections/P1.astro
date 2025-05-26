@@ -1,0 +1,12 @@
+---
+import CardLink from '@/components/CardLink/CardLink.astro';
+import { P1Topics } from '@/lib/topics';
+---
+
+<div class="flex flex-wrap gap">
+  {
+    P1Topics.map((topic) => (
+      <CardLink title={topic.title} description={topic.description} href={topic.href} />
+    ))
+  }
+</div>

@@ -1,0 +1,12 @@
+---
+import CardLink from '@/components/CardLink/CardLink.astro';
+import { OETopics } from '@/lib/topics';
+---
+
+<div class="flex flex-wrap gap">
+  {
+    OETopics.map((topic) => (
+      <CardLink title={topic.title} description={topic.description} href={topic.href} />
+    ))
+  }
+</div>
