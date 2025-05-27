@@ -17,7 +17,7 @@ importers:
       '@astrojs/sitemap':
         specifier: ^3.3.1
         version: 3.3.1
-      '@fontsource-variable/ibm-plex-sans':
+      '@fontsource-variable/manrope':
         specifier: ^5.2.5
         version: 5.2.5
       astro:
@@ -238,8 +238,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/ibm-plex-sans@5.2.5':
-    resolution: {integrity: sha512-SrvCxqJK3NI4JBroXsJdBZGfs6QVfY0lK2VIZIIgYPea+/LI/3zYOOTI0AVvrMrmBks87GJQfPGprftlO8yInQ==}
+  '@fontsource-variable/manrope@5.2.5':
+    resolution: {integrity: sha512-6Mo3ldtgAhxvSSyy+bLbFRjkiYhVo6RLcasJfj9Du5k2nX16/RwjQdBbZJfvsofVt6GqQ+O6AVkazmS3Xw5R9A==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1858,7 +1858,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.4':
     optional: true
 
-  '@fontsource-variable/ibm-plex-sans@5.2.5': {}
+  '@fontsource-variable/manrope@5.2.5': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
