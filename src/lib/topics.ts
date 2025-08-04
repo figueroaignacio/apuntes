@@ -98,3 +98,12 @@ export const MateTopics = [
     href: '/apuntes/tup/primer-cuatrimestre/matematica/temas/logica',
   },
 ];
+
+export const BDTopics = [
+  {
+    title: 'Introducción a las Base de Datos',
+    description:
+      'Colección organizada de datos estructurados, almacenados y gestionados electrónicamente. Las bases de datos permiten el almacenamiento, la actualización y la recuperación eficiente de la información.',
+    href: '/apuntes/tup/segundo-cuatrimestre/bases-de-datos-i/temas/introduccion-a-las-bases-de-datos',
+  },
+];
