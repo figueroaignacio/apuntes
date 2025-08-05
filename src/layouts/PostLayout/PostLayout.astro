@@ -17,26 +17,158 @@ const hasToc = toc.length > 0;
 ---
 
 <Layout description={description} title={title}>
-  <article>
-    <div>
-      <div>
-        <BackButton />
-        <div }>
-          <div>
-            <FormattedDate date={pubDate} />
-            {
-              updatedDate && (
-                <div>
-                  Última actualización <FormattedDate date={updatedDate} />
-                </div>
-              )
-            }
-          </div>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </div>
-        <slot />
+  <article class="post">
+    <header class="post-header">
+      <BackButton />
+      <div class="post-meta">
+        <FormattedDate date={pubDate} />
+        {
+          updatedDate && (
+            <div class="post-updated">
+              Última actualización <FormattedDate date={updatedDate} />
+            </div>
+          )
+        }
       </div>
-    </div>
+      <h1 class="post-title">{title}</h1>
+      <p class="post-description">{description}</p>
+    </header>
+
+    <hr class="post-divider" />
+
+    <section class="post-content prose">
+      <slot />
+    </section>
   </article>
 </Layout>
+
+<style>
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-block: 4rem;
+    padding-inline: 1.5rem;
+    max-width: 724px;
+    margin-inline: auto;
+  }
+
+  .post-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .post-meta {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-updated {
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+  }
+
+  .post-title {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--foreground);
+  }
+
+  .post-description {
+    color: var(--muted-foreground);
+    line-height: 1.6;
+  }
+
+  .post-divider {
+    border-top: 1px solid var(--border);
+  }
+
+  .post-content {
+    color: var(--foreground);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .post-content h2 {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  .post-content h3 {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  .post-content p {
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.25rem;
+    margin-top: 1rem;
+    list-style: disc;
+  }
+
+  .post-content blockquote {
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+    color: var(--muted-foreground);
+    font-style: italic;
+    margin-block: 2rem;
+  }
+
+  .post-content pre {
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+  }
+
+  .post-content code {
+    background-color: var(--accent);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.95rem;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    .post {
+      padding-block: 3rem;
+      padding-inline: 1rem;
+    }
+
+    .post-title {
+      font-size: 1.75rem;
+    }
+
+    .post-description {
+      font-size: 1rem;
+    }
+
+    .post-content h2 {
+      font-size: 1.25rem;
+    }
+
+    .post-content h3 {
+      font-size: 1.125rem;
+    }
+  }
+</style>
