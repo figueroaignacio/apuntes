@@ -64,35 +64,6 @@ body {
   line-height: 1.7;
 }
 
-main {
-  padding: 1rem;
-}
-
-code {
-  padding: 2px 5px;
-  border-radius: 2px;
-}
-
-pre {
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  padding: 1.5em;
-  border-radius: 8px;
-}
-
-pre > code {
-  all: unset;
-}
-
-@media (max-width: 720px) {
-  body {
-    font-size: 18px;
-  }
-  main {
-    padding: 1em;
-  }
-}
-
 .sr-only {
   border: 0;
   padding: 0;
@@ -158,18 +129,4 @@ li {
 
 li {
   list-style: none;
-}
-
-/* Utilities */
-
-.flex {
-  display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.gap {
-  gap: 1.25rem;
 }

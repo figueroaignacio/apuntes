@@ -10,15 +10,38 @@ interface CareerCardProps {
 const { href, career, university, description, image } = Astro.props;
 ---
 
-<div>
-  <!-- <img src={image} alt="" /> -->
+<div class="career-card">
   <a href={href}>
     <h2>
       {career}
     </h2>
-    <p>
-      {description}
-    </p>
-    <p>{university}</p>
   </a>
+  <p>
+    {description}
+  </p>
+  <span>{university}</span>
 </div>
+
+<style>
+  .career-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    & a {
+      text-decoration: underline;
+    }
+
+    & p {
+      color: var(--muted-foreground);
+    }
+
+    & span {
+      font-size: 0.75rem;
+    }
+  }
+</style>

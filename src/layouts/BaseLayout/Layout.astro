@@ -67,7 +67,7 @@ const { title, description } = Astro.props;
   body {
     max-width: 724px;
     margin-inline: auto;
-    padding-inline: 1rem;
+    padding: 1rem;
   }
 
   img,
@@ -95,5 +95,21 @@ const { title, description } = Astro.props;
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  code {
+    padding: 2px 5px;
+    border-radius: 2px;
+  }
+
+  pre {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    padding: 1.5em;
+    border-radius: 8px;
+  }
+
+  pre > code {
+    all: unset;
   }
 </style>

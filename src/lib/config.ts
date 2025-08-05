@@ -6,6 +6,5 @@ export const careers = [
     href: '/apuntes/tup',
     description:
       'Esta carrera está pensada para formar profesionales con sólidas habilidades técnicas en programación y desarrollo de software.',
-    image: '/utn-logo.png',
   },
 ];
