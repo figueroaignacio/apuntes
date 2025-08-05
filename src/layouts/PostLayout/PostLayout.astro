@@ -47,9 +47,6 @@ const hasToc = toc.length > 0;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-block: 4rem;
-    padding-inline: 1.5rem;
-    max-width: 724px;
     margin-inline: auto;
   }
 
@@ -74,6 +71,7 @@ const hasToc = toc.length > 0;
   .post-title {
     font-weight: 700;
     line-height: 1.2;
+    font-size: 1.25rem;
     color: var(--foreground);
   }
 
@@ -147,28 +145,5 @@ const hasToc = toc.length > 0;
 
   a:hover {
     text-decoration: none;
-  }
-
-  @media (max-width: 640px) {
-    .post {
-      padding-block: 3rem;
-      padding-inline: 1rem;
-    }
-
-    .post-title {
-      font-size: 1.75rem;
-    }
-
-    .post-description {
-      font-size: 1rem;
-    }
-
-    .post-content h2 {
-      font-size: 1.25rem;
-    }
-
-    .post-content h3 {
-      font-size: 1.125rem;
-    }
   }
 </style>
