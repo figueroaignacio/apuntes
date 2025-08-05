@@ -3,10 +3,29 @@
 import ArrowLeftIcon from '@/assets/svg/arrow-left.svg';
 ---
 
-<button id="backButton">
+<button id="backButton" class="back-button">
   <ArrowLeftIcon />
   <span> Volver </span>
 </button>
+
+<style>
+  .back-button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--accent);
+    display: flex;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.75rem;
+    transition: filter 0.1s ease;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(1.1);
+    }
+  }
+</style>
 
 <script is:inline>
   function handleBack(e) {
