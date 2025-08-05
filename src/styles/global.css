@@ -130,3 +130,22 @@ li {
 li {
   list-style: none;
 }
+
+/* Utilities */
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap {
+  gap: 1.25rem;
+}
+
+.assignature-title {
+  margin: 2rem 0;
+  text-decoration: underline;
+}

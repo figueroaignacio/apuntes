@@ -8,7 +8,27 @@ interface AssignatureCardProps {
 const { title, emoji, href } = Astro.props;
 ---
 
-<a href={href}>
+<a href={href} class="assignature-card">
   <span>{title}</span>
   <span>{emoji}</span>
 </a>
+
+<style>
+  .assignature-card {
+    background-color: var(--card);
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & span:nth-child(1) {
+      align-self: flex-start;
+    }
+
+    & span:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+</style>
