@@ -39,6 +39,14 @@ body::-webkit-scrollbar-thumb {
   scrollbar-color: var(--border) transparent;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -133,7 +141,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-size: inherit;
+  font-size: initial;
 }
 
 ul,
@@ -148,6 +156,10 @@ li {
   font-size: 1rem;
 }
 
+li {
+  list-style: none;
+}
+
 /* Utilities */
 
 .flex {
@@ -160,13 +172,4 @@ li {
 
 .gap {
   gap: 1.25rem;
-}
-
-.assignatureTitle {
-  background-color: var(--primary);
-  border-radius: 7px;
-  width: fit-content;
-  color: white;
-  padding: 0 1rem;
-  margin-block: 5rem 2rem;
 }
