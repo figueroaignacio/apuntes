@@ -1,7 +1,4 @@
 ---
-// Styles
-import styles from './CareerCard.module.css';
-
 interface CareerCardProps {
   career: string;
   university: string;
@@ -13,9 +10,9 @@ interface CareerCardProps {
 const { href, career, university, description, image } = Astro.props;
 ---
 
-<div class={styles.careerCard}>
-  <img src={image} alt="" class={styles.img} />
-  <a href={href} class={styles.anchor}>
+<div>
+  <!-- <img src={image} alt="" /> -->
+  <a href={href}>
     <h2>
       {career}
     </h2>

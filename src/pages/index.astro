@@ -1,7 +1,4 @@
 ---
-// Styles
-import styles from '@/styles/Home.module.css';
-
 // Config
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
 
@@ -15,13 +12,13 @@ import Layout from '@/layouts/BaseLayout/Layout.astro';
 ---
 
 <Layout description={SITE_DESCRIPTION} title={SITE_TITLE}>
-  <section class={styles.homeSection}>
+  <section>
     <Hero />
     <p>
       Este proyecto recopila los apuntes que voy tomando durante mi formación como desarrollador de
       software, ya sean carreras universitarias, formaciones o cursos.
     </p>
-    <ul class={styles.list}>
+    <ul>
       {
         careers.map((item) => (
           <li>

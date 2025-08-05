@@ -1,7 +1,4 @@
 ---
-// Styles
-import styles from './Footer.module.css';
-
 // Components
 import AstroIcon from '@/assets/svg/astro.svg';
 import CSSIcon from '@/assets/svg/css.svg';
@@ -9,27 +6,27 @@ import MarkdownIcon from '@/assets/svg/markdown.svg';
 import MDXIcon from '@/assets/svg/mdx.svg';
 ---
 
-<footer class={styles.footer}>
-  <div class={styles.container}>
-    <p class={styles.text}>Desarrollado con</p>
-    <div class={styles.badges}>
-      <div class={styles.badge}>
+<footer>
+  <div>
+    <p>Desarrollado con</p>
+    <div>
+      <div>
         <AstroIcon />
         <span>Astro</span>
       </div>
-      <div class={styles.badge}>
+      <div>
         <AstroIcon />
         <span>Astro Content Collections</span>
       </div>
-      <div class={styles.badge}>
+      <div>
         <CSSIcon />
         <span>CSS Modules</span>
       </div>
-      <div class={styles.badge}>
+      <div>
         <MarkdownIcon />
         <span>Markdown</span>
       </div>
-      <div class={styles.badge}>
+      <div>
         <MDXIcon />
         <span>MDX</span>
       </div>

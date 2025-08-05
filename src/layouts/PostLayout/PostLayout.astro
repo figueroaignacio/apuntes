@@ -3,13 +3,9 @@
 import type { MarkdownHeading } from 'astro';
 import type { CollectionEntry } from 'astro:content';
 
-// Styles
-import styles from './PostLayout.module.css';
-
 // Components
 import BackButton from '@/components/BackButton/BackButton.astro';
 import FormattedDate from '@/components/FormattedDate.astro';
-import Toc from '@/components/Toc/Toc.astro';
 import Layout from '../BaseLayout/Layout.astro';
 
 type Props = CollectionEntry<'apuntes'>['data'] & {
@@ -21,30 +17,23 @@ const hasToc = toc.length > 0;
 ---
 
 <Layout description={description} title={title}>
-  <article class={styles.wrapper}>
-    <div class={`${styles.contentGrid} ${!hasToc ? styles.noToc : ''}`}>
-      {
-        hasToc && (
-          <aside class={styles.tocWrapper}>
-            <Toc toc={toc} />
-          </aside>
-        )
-      }
-      <div class={styles.postContent}>
+  <article>
+    <div>
+      <div>
         <BackButton />
-        <div class={styles.titleBlock}>
-          <div class={styles.date}>
+        <div }>
+          <div>
             <FormattedDate date={pubDate} />
             {
               updatedDate && (
-                <div class={styles.lastUpdatedOn}>
+                <div>
                   Última actualización <FormattedDate date={updatedDate} />
                 </div>
               )
             }
           </div>
-          <h1 class={styles.title}>{title}</h1>
-          <p class={styles.description}>{description}</p>
+          <h1>{title}</h1>
+          <p>{description}</p>
         </div>
         <slot />
       </div>
