@@ -1,10 +1,8 @@
 ---
-title: Bases de Datos I
+title: Introducción a las Bases de Datos
 description: Colección organizada de datos estructurados, almacenados y gestionados electrónicamente. Las bases de datos permiten el almacenamiento, la actualización y la recuperación eficiente de la información.
 pubDate: 2025-4-8
 ---
-
-# Introducción a las Bases de Datos
 
 **Curso:** Tecnicatura Universitaria en Programación  
 **Módulo:** Base de Datos - Módulo 1  
