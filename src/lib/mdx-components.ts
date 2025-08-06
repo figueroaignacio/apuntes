@@ -1,5 +1,5 @@
 import AssignatureCard from '@/components/AssignatureCard.astro';
-import CardLink from '@/components/CardLink/CardLink.astro';
+import CardLink from '@/components/CardLink.astro';
 import AySO from '@/sections/AySO.astro';
 import BaseDeDatos1 from '@/sections/BaseDeDatos1.astro';
 import Matematica from '@/sections/Matematica.astro';
