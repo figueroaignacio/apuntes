@@ -4,10 +4,6 @@ description: Colección organizada de datos estructurados, almacenados y gestion
 pubDate: 2025-4-8
 ---
 
-**Curso:** Tecnicatura Universitaria en Programación  
-**Módulo:** Base de Datos - Módulo 1  
-**Tema:** Introducción a las Bases de Datos
-
 ## Definiciones Básicas
 
 ### Dato

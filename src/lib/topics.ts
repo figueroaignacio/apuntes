@@ -107,3 +107,12 @@ export const BDTopics = [
     href: '/apuntes/tup/segundo-cuatrimestre/bases-de-datos-i/temas/introduccion-a-las-bases-de-datos',
   },
 ];
+
+export const PETopics= [
+  {
+    title: 'Identificar y Clasificar Datos',
+    description:
+      'Veamos los conceptos de población, muestra, tipos de variables y escalas de medición. Estos conocimientos serán la base para todo el recorrido en estadística y fundamentales para tu formación como profesional de la programación.',
+    href: '/apuntes/tup/segundo-cuatrimestre/probabilidad-y-estadistica/temas/identificar-y-clasificar-datos',
+  },
+];

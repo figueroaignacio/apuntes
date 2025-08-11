@@ -1,0 +1,12 @@
+---
+import CardLink from '@/components/CardLink.astro';
+import { PETopics } from '@/lib/topics';
+---
+
+<div class="flex flex-wrap gap">
+  {
+    PETopics.map((topic) => (
+      <CardLink title={topic.title} description={topic.description} href={topic.href} />
+    ))
+  }
+</div>

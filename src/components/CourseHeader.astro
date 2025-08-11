@@ -1,0 +1,15 @@
+---
+interface CourseHeaderProps {
+  course: string;
+  module: string;
+  topic: string;
+}
+
+const { course, module, topic } = Astro.props;
+---
+
+<div>
+  <h3>{course}</h3>
+  <p>{module}</p>
+  <p>{topic}</p>
+</div>
